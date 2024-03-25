@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* Стили для заголовка h1 */
+h1 {
+    color: #333; /* Цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+/* Стили для таблицы */
+#apartmentsTable {
+    width: 100%; /* Ширина таблицы на всю ширину экрана */
+    border-collapse: collapse; /* Схлопывание границ ячеек */
+}
+
+/* Стили для ячеек заголовка таблицы */
+#apartmentsTable th {
+    background-color: #f2f2f2; /* Цвет фона */
+    border: 1px solid #ccc; /* Граница */
+    padding: 8px; /* Внутренний отступ */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Стили для ячеек тела таблицы */
+#apartmentsTable td {
+    border: 1px solid #ccc; /* Граница */
+    padding: 8px; /* Внутренний отступ */
+}
+
+/* Стили для чётных строк таблицы */
+#apartmentsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Цвет фона */
+}
+
+/* Стили для нечётных строк таблицы */
+#apartmentsTable tbody tr:nth-child(odd) {
+    background-color: #fff; /* Цвет фона */
+}

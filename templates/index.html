@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Список квартир</title>
+</head>
+<body>
+    <h1>Список квартир</h1>
+    <table id="apartmentsTable">
+        <thead>
+            <tr>
+                <th>Номер квартиры</th>
+                <th>Объект</th>
+                <th>Статус</th>
+                <th>Этаж</th>
+                <th>КВ</th>
+                <th>Дата</th>
+                <th>Цена</th>
+                <th>Клиент</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Здесь будут данные о квартирах -->
+        </tbody>
+    </table>
+
+    <!-- Форма для создания новой квартиры -->
+    <form id="apartmentForm">
+        <input type="text" id="number_apartament" placeholder="Номер квартиры">
+        <input type="text" id="apartament_object" placeholder="Объект">
+        <input type="text" id="status" placeholder="Статус">
+        <input type="number" id="floor" placeholder="Этаж">
+        <input type="number" id="area" step="0.1" placeholder="КВ">
+        <input type="date" id="date" placeholder="Дата">
+        <input type="number" id="price" placeholder="Цена">
+        <input type="text" id="client" placeholder="Клиент">
+        <input type="datetime-local" id="status_apartment" placeholder="Статус квартиры">
+        <button type="submit">Создать квартиру</button>
+    </form>
+
+
+    <!-- <button id="previousPage" class="hidden">Previous</button>
+    <button id="nextPage" class="hidden">Next</button> -->
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -22,7 +22,7 @@ class Apartment(models.Model):
         ('active', 'Активна'),
     ]
 
-    name = models.CharField(max_length=100, verbose_name='№ Квартиры')
+    number_apartament = models.IntegerField(verbose_name='№ Квартиры')
     apartament_object = models.ForeignKey(
         ObjectApartament,
         on_delete=models.CASCADE,

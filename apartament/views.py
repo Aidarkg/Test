@@ -10,7 +10,7 @@ class ApartamentListAPIView(ListCreateAPIView):
     queryset = Apartment.objects.all()
     serializer_class = ApartmentSerializer
     pagination_class = PageNumberPagination
-    filterset_fields = ['name']
+    filterset_fields = ['number_apartament']
 
 
 class ApartamentUpdateDeleteAPIView(RetrieveUpdateDestroyAPIView):
@@ -28,3 +28,8 @@ class ObjectApartamentUpdateDeleteAPIView(RetrieveUpdateDestroyAPIView):
     queryset = ObjectApartament.objects.all()
     serializer_class = ObjectApartamentSerializer
     lookup_field = 'id'
+
+
+def apartamentlistview(request):
+    if request.method == 'GET':
+        return render(request, 'index.html')
